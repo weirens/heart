@@ -96,16 +96,6 @@ if user_count > 100 then
 end
 ```
 
-### Get Started
-
-```bash
-# Clone repository
-git clone https://github.com/your-username/heart-lang.git
-cd heart-lang
-
-# Run example
-python heart_compiler.py examples/hello.heart
-```
 
 ### Contributing
 
@@ -202,17 +192,6 @@ Heart 是一门**以中文为基础语法**的创新编程语言。目前使用 
 如果 用户数量 > 100 则
     发送通知("用户数超过100")
 结束
-```
-
-### 快速开始
-
-```bash
-# 克隆仓库
-git clone https://github.com/your-username/heart-lang.git
-cd heart-lang
-
-# 运行示例
-python heart_compiler.py examples/hello.heart
 ```
 
 ### 参与贡献
