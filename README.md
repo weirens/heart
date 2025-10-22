@@ -1,4 +1,4 @@
-# Heart Programming Language / Heart 编程语言
+Heart Programming Language / Heart 编程语言
 
 <div align="center">
   <h1>❤️ Heart Programming Language</h1>
