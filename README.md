@@ -230,20 +230,3 @@ python heart_compiler.py examples/hello.heart
 
 **Note**: This project is currently in the concept validation phase. We welcome anyone interested in Chinese programming and compiler development to join us!  
 **注**: 本项目目前处于概念验证阶段，欢迎对中文编程和编译器开发感兴趣的朋友一起参与建设！
-
-<style>
-a {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 10px 20px;
-    margin: 5px;
-    text-decoration: none;
-    color: #333;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-a:hover {
-    background-color: #e0e0e0;
-}
-</style>
