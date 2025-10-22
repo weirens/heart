@@ -1,8 +1,132 @@
-# Heart 语言介绍 - 中文编程语言原型
+# Heart Programming Language / Heart 编程语言
+
+<div align="center">
+  <h1>❤️ Heart Programming Language</h1>
+  <p><em>Making Chinese Beat in the Code World / 让中文在代码世界跳动</em></p>
+  
+  <div>
+    <button onclick="showEnglish()">English</button>
+    <button onclick="showChinese()">中文</button>
+  </div>
+</div>
+
+---
+
+<!-- English Version -->
+<div id="english-version">
+
+## Overview
+
+Heart is an innovative programming language that uses **Chinese as its base syntax**. Currently implemented in Python as a proof-of-concept, our ultimate goal is to develop a complete, high-performance Chinese programming language using assembly language, providing a more natural coding experience for native Chinese speakers.
+
+## Project Vision
+
+### 🎯 Core Philosophy
+- **Chinese-First**: Chinese syntax as foundation, lowering programming barriers for Chinese speakers
+- **Progressive Development**: Concept validation with Python first, then high-performance assembly implementation
+- **Cultural Adaptation**: Syntax design aligns with Chinese thinking patterns
+
+### 🔄 Development Roadmap
+```
+Phase 1: Python Prototype → Phase 2: Syntax Specification → Phase 3: Assembly Implementation → Phase 4: Ecosystem Building
+```
+
+## Technical Architecture
+
+### Current Prototype (Python Implementation)
+```
+Chinese Source Code → Python Parser → Intermediate Representation → Interpretation/Code Generation
+```
+
+### Target Architecture (Assembly Implementation)
+```
+Chinese Source Code → Lexer(Assembly) → Parser(Assembly) → Assembly Code Generation → Native Execution
+```
+
+## Syntax Features
+
+### Basic Syntax Examples
+```heart
+let count = 42
+let name = "张三"
+let is_active = true
+
+if count > 10 then
+    print("Count is large")
+else
+    print("Count is small")
+end
+
+for i from 1 to 5 do
+    print("Iteration: ", i)
+end
+```
+
+### Function Definition
+```heart
+function greet(name)
+    return "Hello, " + name + "!"
+end
+
+# Usage
+message = greet("李四")
+print(message)
+```
+
+## Current Status
+
+### ✅ Implemented
+- Chinese keyword recognition (让/let, 如果/if, 循环/for, 函数/function, etc.)
+- Basic variable declaration and assignment
+- Conditional statements and loops
+- Simple function definitions
+
+### Assembly Development Plan
+- **Phase 1**: Lexical Analysis (Assembly implementation)
+- **Phase 2**: Syntax Analysis and Parser
+- **Phase 3**: Code Generation and Optimization
+
+## Unique Advantages
+
+```heart
+# Natural expression for Chinese speakers
+let user_count = get_user_count()
+if user_count > 100 then
+    send_notification("User count exceeds 100")
+end
+```
+
+## Get Started
+
+```bash
+# Clone repository
+git clone https://github.com/your-username/heart-lang.git
+cd heart-lang
+
+# Run example
+python heart_compiler.py examples/hello.heart
+```
+
+## Contributing
+
+We welcome contributions in:
+- Chinese programming syntax design
+- Assembly language development
+- Compiler construction
+- Documentation and examples
+
+---
+
+*Starting from Python prototype, advancing toward high-performance assembly!*
+
+</div>
+
+<!-- Chinese Version -->
+<div id="chinese-version" style="display: none;">
 
 ## 概述
 
-Heart 是一门**以中文为基础语法**的编程语言原型，目前使用 Python 实现概念验证。我们的最终目标是使用汇编语言开发完整的、高性能的中文编程语言，为中文母语者提供更自然的编程体验。
+Heart 是一门**以中文为基础语法**的创新编程语言。目前使用 Python 实现概念验证，我们的最终目标是使用汇编语言开发完整的、高性能的中文编程语言，为中文母语者提供更自然的编码体验。
 
 ## 项目愿景
 
@@ -58,62 +182,21 @@ Heart 是一门**以中文为基础语法**的编程语言原型，目前使用 
 打印(消息)
 ```
 
-### 数据结构
-```heart
-# 列表
-让 数字列表 = [1, 2, 3, 4, 5]
+## 当前状态
 
-# 字典
-让 人员信息 = {"姓名": "王五", "年龄": 30}
-```
+### ✅ 已实现特性
+- 中文关键字识别（让、如果、循环、函数等）
+- 基础变量声明和赋值
+- 条件判断和循环结构
+- 简单的函数定义
 
-## 当前原型功能
-
-### 已实现特性
-- ✅ 中文关键字识别（让、如果、循环、函数等）
-- ✅ 基础变量声明和赋值
-- ✅ 条件判断和循环结构
-- ✅ 简单的函数定义
-- ✅ 基本算术运算
-
-### Python 原型的价值
-```python
-# 这是我们的概念验证代码结构示例
-class HeartParser:
-    def 解析(self, 源代码):
-        # 中文语法解析逻辑
-        pass
-    
-    def 生成中间代码(self):
-        # 为后续汇编开发做准备
-        pass
-```
-
-## 汇编开发计划
-
-### 第一阶段：词法分析（汇编）
-```assembly
-; 计划中的中文token识别
-识别关键字:
-    cmp byte [ptr], '让'
-    je 关键字_让
-    cmp byte [ptr], '如果'  
-    je 关键字_如果
-```
-
-### 第二阶段：语法分析
-- 递归下降解析器（汇编实现）
-- 抽象语法树构建
-- 语义分析
-
-### 第三阶段：代码生成
-- x86/ARM 汇编代码生成
-- 优化编译器开发
-- 标准库实现
+### 汇编开发计划
+- **第一阶段**：词法分析（汇编实现）
+- **第二阶段**：语法分析和解析器
+- **第三阶段**：代码生成和优化
 
 ## 独特优势
 
-### 对中文使用者的友好性
 ```heart
 # 更符合中文思维的表达
 让 用户数量 = 获取用户数量()
@@ -122,68 +205,66 @@ class HeartParser:
 结束
 ```
 
-### 教育价值
-- 降低编程学习门槛
-- 促进计算思维在中文语境下的普及
-- 为中文编程教育提供工具
+## 快速开始
 
-## 示例应用
+```bash
+# 克隆仓库
+git clone https://github.com/your-username/heart-lang.git
+cd heart-lang
 
-### 数学计算
-```heart
-函数 计算斐波那契(序号)
-    如果 序号 <= 1 则
-        返回 序号
-    结束
-    返回 计算斐波那契(序号-1) + 计算斐波那契(序号-2)
-结束
+# 运行示例
+python heart_compiler.py examples/hello.heart
 ```
 
-### 业务逻辑
-```heart
-函数 检查订单(订单)
-    如果 订单.金额 > 1000 且 订单.状态 == "待处理" 则
-        发送审核通知(订单)
-    结束
-结束
-```
+## 参与贡献
 
-## 性能目标
-
-### 最终版本性能指标
-- **执行速度**：接近C语言的性能
-- **内存占用**：最小化运行时开销
-- **编译速度**：快速的中文到机器码转换
-
-## 开发进展
-
-### 当前状态
-- ✅ Python 原型完成概念验证
-- 🔄 语法规范制定中
-- ⏳ 汇编版本设计阶段
-
-### 需要贡献的领域
-1. 中文编程语法设计
-2. 汇编语言开发经验
-3. 编译器构造知识
-4. 中文自然语言处理
-
-## 未来展望
-
-### 短期目标（6个月）
-- 完成语法规范v1.0
-- 开发基础的汇编词法分析器
-- 建立测试框架
-
-### 长期愿景
-- 成为真正可用的中文编程语言
-- 构建完整的中文编程生态
-- 推动中文在编程领域的发展
+我们欢迎在以下方面的贡献：
+- 中文编程语法设计
+- 汇编语言开发
+- 编译器构造
+- 文档和示例编写
 
 ---
-*Heart 语言 - 让中文在代码世界跳动*  
+
 *从 Python 原型出发，向汇编高性能迈进！*
 
+</div>
+
+<script>
+function showEnglish() {
+    document.getElementById('english-version').style.display = 'block';
+    document.getElementById('chinese-version').style.display = 'none';
+}
+
+function showChinese() {
+    document.getElementById('english-version').style.display = 'none';
+    document.getElementById('chinese-version').style.display = 'block';
+}
+
+// Default to English
+showEnglish();
+</script>
+
+<style>
+button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button:active {
+    background-color: #d0d0d0;
+}
+</style>
+
 ---
 
-**注**：本项目目前处于概念验证阶段，欢迎对中文编程和编译器开发感兴趣的朋友一起参与建设！
+**Note**: This project is currently in the concept validation phase. We welcome anyone interested in Chinese programming and compiler development to join us!  
+**注**: 本项目目前处于概念验证阶段，欢迎对中文编程和编译器开发感兴趣的朋友一起参与建设！
