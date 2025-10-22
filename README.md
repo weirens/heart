@@ -1,7 +1,8 @@
-Heart Programming Language / Heart 编程语言
+
 
 <div align="center">
-  <h1>❤️ Heart Programming Language</h1>
+  <h1>Heart Programming Language / Heart 编程语言</h1>
+  <h2>❤️ Heart Programming Language</h1>
   <p><em>Making Chinese Beat in the Code World / 让中文在代码世界跳动</em></p>
   
   <div>
